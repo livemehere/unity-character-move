@@ -140,6 +140,7 @@ public class Player : MonoBehaviour
          camera.transform.position = transform.position + cameraOffset;
          camera.transform.LookAt(transform.position);
          camera.transform.RotateAround(transform.position,Vector3.up,rotationX);
+         camera.transform.RotateAround(transform.position,camera.transform.right,-rotationY);
       }
    }
 }
